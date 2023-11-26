@@ -40,4 +40,4 @@ def auto_typer(code_path, interval):
 
 if __name__ == "__main__":
     file_path = Path(__file__).parent / "test.py"
-    auto_typer(file_path, 3)
+    auto_typer(file_path, 5)

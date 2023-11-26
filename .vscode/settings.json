@@ -1,0 +1,8 @@
+{
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoSurround": "never",
+}
