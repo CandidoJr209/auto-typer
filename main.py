@@ -1,5 +1,4 @@
 import pyautogui
-from pathlib import Path
 
 def auto_typer(code_path, interval):
     with open(code_path, "r") as f:
@@ -37,7 +36,3 @@ def auto_typer(code_path, interval):
             prev_line = line
 
             pyautogui.press('enter')
-
-if __name__ == "__main__":
-    file_path = Path(__file__).parent / "test.py"
-    auto_typer(file_path, 5)
