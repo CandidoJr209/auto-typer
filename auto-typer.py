@@ -1,5 +1,7 @@
+#!/usr/bin/env python
 import pyautogui
 from pathlib import Path
+import argparse
 
 INDENTATION_WIDTH = 4
 
@@ -45,3 +47,12 @@ def auto_typer(file_path, interval):
             prev_line = line
 
             pyautogui.press('enter')
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Automate typing code into a code editor.")
+    parser.add_argument("file_path", help="Path to the code file.")
+    parser.add_argument("interval", type=float, help="Interval between the script initialization and typing, in seconds.")
+
+    args = parser.parse_args()
+
+    auto_typer(args.file_path, args.interval)

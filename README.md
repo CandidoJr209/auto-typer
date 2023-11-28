@@ -9,24 +9,31 @@ AutoTyper is a Python script designed to automate the process of typing code fro
 - **Customizable Interval**: Set the typing interval to match your preferred speed.
 
 ## How to Use
-1. Install the required libraries:
+1. Clone the repository to your local machine:
    ```bash
-   pip install pyautogui
+   git clone git@github.com:CandidoJr209/auto-typer.git
    ```
 
-2. Copy the auto_typer function into your Python project.
+2. Set up a virtual environment and install the dependencies:
+    ```bash
+    cd auto-typer
 
-3. Call the function with the path to your code file and the desired interval between the script initialization and the typing:
-    ```python
-    from auto_typer import auto_typer
+    python -m venv venv
+    source venv/bin/activate
 
-    code_path = "path/to/your/code/file.py"
-    typing_interval = 0.1  # Adjust as needed
-
-    auto_typer(code_path, interval)
+    pip install -r requirements.txt
     ```
 
-4. Run your script and switch to your code editor within the specified sleep interval to give it focus.
+
+3. Make the script executable::
+    ```bash
+    chmod +x auto_typer.py
+    ```
+
+4. Run the script with command line arguments:
+    ```bash
+    ./auto_typer.py path/to/your/code/file.py 3
+    ```
 
 ## Important Notes
 * Make sure to adjust the typing_interval based on your code editor's responsiveness.
